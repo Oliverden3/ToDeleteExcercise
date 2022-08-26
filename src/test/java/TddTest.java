@@ -27,5 +27,15 @@ class TddTest {
         System.out.println("Testing for specific name");
         String expected = "Oliver";
         String actual = MyClass.CombinedNames(2);
+        assertEquals(expected,actual);
     }
+    @Test
+    public void Test3(){
+        System.out.println("Testing for 2 names");
+        String expected = "Kasper, Denis";
+        int[] tempArray ={0,1};
+        String actual = MyClass.CombinedNames((tempArray));
+        assertEquals(expected,actual);
+    }
+
 }
