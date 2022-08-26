@@ -35,11 +35,11 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           
-          - name: mysql
-                uses: mirromutth/mysql-action@v1.1
-                with:
+      - name: mysql
+        uses: mirromutth/mysql-action@v1.1
+        with:
   
-                mysql version: '8.0' # Optional, default value is "latest". The version of the MySQL
-                mysql database: 'startcode_test' # Optional, default value is "test". The specified database which will be create
-                mysql user: 'dev' # Required if "mysql root password" is empty, default is empty. The superuser for the specified database. Can use secrets, too
-                mysql password: 'ax2'
+          mysql version: '8.0' # Optional, default value is "latest". The version of the MySQL
+          mysql database: 'startcode_test' # Optional, default value is "test". The specified database which will be create
+          mysql user: 'dev' # Required if "mysql root password" is empty, default is empty. The superuser for the specified database. Can use secrets, too
+          mysql password: 'ax2'
