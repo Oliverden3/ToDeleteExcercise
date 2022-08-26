@@ -17,9 +17,15 @@ class TddTest {
     @Test
     public void Test1(){
         System.out.println("Testing list is not empty");
-
         String expected = "Kasper, Denis, Oliver";
-        String actual = String.valueOf(MyClass.CombinedNames());
+        String actual = MyClass.CombinedNames(null);
+        assertEquals(expected,actual);
     }
 
+    @Test
+    public void Test2(){
+        System.out.println("Testing for specific name");
+        String expected = "Oliver";
+        String actual = MyClass.CombinedNames(2);
+    }
 }
